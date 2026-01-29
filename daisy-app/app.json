@@ -56,9 +56,6 @@
         }
       ]
     ],
-    "scheme": "daisy",
-    "runtimeVersion": {
-      "policy": "appVersion"
-    }
+    "scheme": "daisy"
   }
 }
