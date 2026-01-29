@@ -4,12 +4,10 @@
     "slug": "daisy-quit-alcohol",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#FFF8E7"
+      "backgroundColor": "#FFD600"
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
@@ -21,16 +19,10 @@
         "usesNonExemptEncryption": false
       },
       "infoPlist": {
-        "NSUserTrackingUsageDescription": "This helps us understand how you use Daisy to improve your experience. You can decline and still use all features.",
-        "NSCameraUsageDescription": "Daisy needs camera access if you want to add photos to your journal entries.",
-        "NSPhotoLibraryUsageDescription": "Daisy needs photo library access if you want to add photos to your journal entries.",
         "ITSAppUsesNonExemptEncryption": false,
         "LSApplicationQueriesSchemes": ["tel", "telprompt"],
-        "UIBackgroundModes": ["remote-notification"],
-        "CFBundleAllowMixedLocalizations": true,
         "CFBundleDevelopmentRegion": "en"
       },
-      "associatedDomains": ["applinks:daisy.app"],
       "privacyManifests": {
         "NSPrivacyAccessedAPITypes": [
           {
@@ -44,44 +36,17 @@
             "NSPrivacyCollectedDataTypeLinked": true,
             "NSPrivacyCollectedDataTypeTracking": false,
             "NSPrivacyCollectedDataTypePurposes": ["NSPrivacyCollectedDataTypePurposeAppFunctionality"]
-          },
-          {
-            "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypePhoneNumber",
-            "NSPrivacyCollectedDataTypeLinked": true,
-            "NSPrivacyCollectedDataTypeTracking": false,
-            "NSPrivacyCollectedDataTypePurposes": ["NSPrivacyCollectedDataTypePurposeAppFunctionality"]
-          },
-          {
-            "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeHealthAndFitness",
-            "NSPrivacyCollectedDataTypeLinked": true,
-            "NSPrivacyCollectedDataTypeTracking": false,
-            "NSPrivacyCollectedDataTypePurposes": ["NSPrivacyCollectedDataTypePurposeAppFunctionality"]
           }
         ],
         "NSPrivacyTracking": false
       }
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFF8E7"
-      },
       "package": "com.daisy.quitalcohol"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-apple-authentication",
       "expo-secure-store",
-      [
-        "expo-notifications",
-        {
-          "icon": "./assets/notification-icon.png",
-          "color": "#F4A460",
-          "sounds": []
-        }
-      ],
       [
         "expo-build-properties",
         {
@@ -91,18 +56,9 @@
         }
       ]
     ],
-    "extra": {
-      "eas": {
-        "projectId": "your-eas-project-id"
-      }
-    },
     "scheme": "daisy",
-    "owner": "your-expo-username",
     "runtimeVersion": {
       "policy": "appVersion"
-    },
-    "updates": {
-      "url": "https://u.expo.dev/your-eas-project-id"
     }
   }
 }
