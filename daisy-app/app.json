@@ -47,7 +47,6 @@
     "plugins": [
       "expo-apple-authentication",
       "expo-secure-store",
-      "react-native-purchases",
       [
         "expo-build-properties",
         {
